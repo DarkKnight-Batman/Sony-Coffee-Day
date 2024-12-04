@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #2b2b2b;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #e4a724;
+}
+
+/* Logo Styling */
+.logo-img {
+  width: 120px; /* Adjust for logo size */
+  height: auto;
+}
+
+/* Search Icon Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; 
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  color: #e4a724; /* Change color on hover */
+}
+
+
+/* Page-Specific Backgrounds */
+.hero, .page-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: cornsilk;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('./cafephotos/Homebgc.png');
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections with Backgrounds */
+#menu, #specials, #gallery, #about, #contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+#menu {
+  background-image: url('./cafephotos/menubg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Set a fixed width for each item */
+  gap: 20px; /* Space between grid items */
+  width: 100%; /* Full width of the parent container */
+  max-width: 1200px; /* Optional: Limit max width */
+  padding: 10px;
+}
+
+.menu-item {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  width: 100%; /* Ensure each item takes the full width of its grid cell */
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 08px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover {
+  transform: scale(1.08);
+}
+
+#gallery {
+  background-image: url('./cafephotos/gallerybgc.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Fixed background for gallery */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 120px 20px 20px; /* Padding to avoid content overlap with fixed header */
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+
+}
+
+
+/* Specials Section */
+#specials {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+/* About Section */
+body {
+  background-image: url('./cafephotos/coffee-beans-7126154_1920.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* About Section */
+#about {
+  background-color: rgba(255, 255, 255, 0.6); /* Translucent white background */
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Owner Profile Section */
+.owner-profile {
+  display: flex; /* Align image and text side-by-side */
+  gap: 20px;
+  align-items: center; /* Vertically centers image and text */
+  margin-top: 20px;
+}
+
+.owner-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.owner-profile h3,
+.owner-profile p {
+  margin: 0;
+  color: #333;
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}

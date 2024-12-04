@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siri's Coffee Day - The best coffee experience in town!">
+  <title>Siri's Coffee Day - Home</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./cafephotos/Sony_cafe_dat-transformed-removebg-preview.png" alt="Logo" class="logo-img">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search">
+        </button>
+        <input type="text" class="search-input" id="search-input" placeholder="Search..." onkeydown="searchQuery(event)">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Siri's Coffee Day</h1>
+        <p>A Sip Above the Rest</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Siri's Coffee Day. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
